@@ -1,0 +1,7 @@
+<div *ngFor="let item of userlist" class="card" style="width: 18rem;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBxkpHs8Jw-P14W7JoGFYFD5QDfP6I6Weo9g&usqp=CAU" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+      <button (click)="deleteUser(item.id)">Elimina</button>
+    </div>
+  </div>
